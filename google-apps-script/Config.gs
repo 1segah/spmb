@@ -46,9 +46,9 @@ const DEFAULT_CONFIG = {
  */
 function getSpreadsheet() {
   const props = PropertiesService.getScriptProperties();
-  const sheetId = props.getProperty("SPREADSHEET_ID") || SPREADSHEET_ID_TARGET;
+  const sheetId = props.getProperty("1E6W7R3eiC9d7hHxPeTz13eKjN88zqJxCaEyc8Z35diQ") || SPREADSHEET_ID_TARGET;
   
-  if (sheetId && sheetId.trim() !== "" && sheetId !== "ISI_ID_GOOGLE_SHEET") {
+  if (sheetId && sheetId.trim() !== "" && sheetId !== "1E6W7R3eiC9d7hHxPeTz13eKjN88zqJxCaEyc8Z35diQ") {
     try {
       return SpreadsheetApp.openById(sheetId);
     } catch (e) {
@@ -68,9 +68,9 @@ function getSpreadsheet() {
  */
 function getDriveFolder() {
   const props = PropertiesService.getScriptProperties();
-  const folderId = props.getProperty("DRIVE_FOLDER_ID") || DRIVE_FOLDER_ID_TARGET;
+  const folderId = props.getProperty("1HpLSQYs2LCsnJ6OnvKh2C4SxHJvZc9RP") || DRIVE_FOLDER_ID_TARGET;
   
-  if (folderId && folderId.trim() !== "" && folderId !== "ISI_ID_FOLDER_GOOGLE_DRIVE") {
+  if (folderId && folderId.trim() !== "" && folderId !== "1HpLSQYs2LCsnJ6OnvKh2C4SxHJvZc9RP") {
     try {
       return DriveApp.getFolderById(folderId);
     } catch (e) {
